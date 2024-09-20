@@ -4,7 +4,7 @@
 		<TypographyHeadline :content="headContent" size="xl" />
 		<VDivider class="my-8" />
 		<textarea v-model="emailList" class="w-full" placeholder="Enter emails separated by , ; or space"></textarea>
-		<Ubutton variant="solid" @click="submitEmails">Submit</Ubutton>
+		<UButton variant="solid" @click="submitEmails">Submit</UButton>
 	</PageContainer>
 </template>
 <script setup>

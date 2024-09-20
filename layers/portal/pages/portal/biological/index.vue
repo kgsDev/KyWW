@@ -129,23 +129,35 @@ const submitData = () => {
 			<div class="relative items-start">
 				<div class="border-4 p-1-4a72-bf16-cd2d1e67829b border-gray-900">
 					<div class="flex">
-						<UFormGroup class="p-2 basis-1/4" label="Sampler Name">
-							<UInput v-model="samplerName" />
-						</UFormGroup>
 						<UFormGroup class="p-2 basis-1/6" label="Site Number">
 							<UInput v-model="siteNumber" type="number" />
 						</UFormGroup>
-						<UFormGroup class="p-2 basis-1/4" label="Select a Site">
-							<UButton label="Open Map" @click="isOpen = true" />
+						<UFormGroup class="p-2 basis-2/6" label="Stream Name">
+							<UInput v-model="streamName" />
 						</UFormGroup>
-						<UFormGroup class="p-2 basis-1/6" label="Date">
-							<UInput v-model="date" type="date" />
+						<UFormGroup class="p-2 basis-1/6" label="Basin">
+							<UInput v-model="basin" />
 						</UFormGroup>
-						<UFormGroup class="p-2 basis-1/6" label="Time">
-							<UInput v-model="time" />
+						<UFormGroup class="p-2 basis-1/6" label="Assessment Date" required>
+							<UInput v-model="dateOfAssessment" icon="solar:calendar-bold" type="date" />
+						</UFormGroup>
+						<UFormGroup class="p-2 basis-1/6" label="Start Time" required>
+							<UInput v-model="startTime" icon="mdi:clock-outline" type="time" />
 						</UFormGroup>
 					</div>
 					<div class="flex">
+						<UFormGroup class="p-2 basis-1/6" label="Sampler ID #">
+							<UInput v-model="samplerId" />
+						</UFormGroup>
+						<UFormGroup class="p-2 basis-2/6" label="Sampler Name">
+							<UInput v-model="samplerName" disabled />
+						</UFormGroup>
+						<UFormGroup class="p-2 basis-1/6" label="County">
+							<UInput v-model="county" />
+						</UFormGroup>
+						<UFormGroup class="p-2 basis-2/6" label="Sampling Location Description">
+							<UInput v-model="samplingLocationDescription" />
+						</UFormGroup>
 					</div>
 					<div class="flex">
 						<h3 class="p-2 basis-2/6 border-2 border-gray-900 text-center text-xl">Weather Conditions</h3>

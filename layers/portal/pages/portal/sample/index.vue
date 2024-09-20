@@ -177,7 +177,7 @@ const averageEcoli = computed(() => {
 const other = ref();
 
 const submittedAlert = () => {
-	alert('Submitted');
+	alert('Submitted sample');
 };
 
 const submitData = () => {
