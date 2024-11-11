@@ -1,3 +1,5 @@
+This is the archive from start of this project
+
 <a href="https://directus.io" target="_blank">
   <img alt="Agency OS - Complete Nuxt3 + Directus project" src="./public/logos/agencyos.png">
   <h1 align="center">AgencyOS</h1>
